@@ -27,5 +27,5 @@
 }
 
 .NavBar a:hover {
-  border-bottom: 5px solid #8c1cd1;
+  border-bottom: 5px solid rgba(4, 102, 191, 1);
 }
