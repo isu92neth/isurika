@@ -10,21 +10,25 @@ h1 {
   font-weight: 650;
   font-size: 35px;
   text-align: center;
+  color: rgb(78, 74, 74);
 }
 
 h2 {
   font-weight: 700;
   font-size: 23px;
+  color: rgb(78, 74, 74);
 }
 
 p {
   font-weight: 500;
   font-size: 21px;
+  color: rgb(78, 74, 74);
 }
 
 a {
   font-weight: 900;
   font-size: 16px;
+  color: rgb(78, 74, 74);
 }
 
 code {

@@ -24,7 +24,7 @@
 
 .NavBar nav ul li a {
   text-decoration: none;
-  color: rgb(124, 116, 116);
+  color: rgb(0, 0, 0);
 }
 
 .NavBar a:hover {
