@@ -7,6 +7,9 @@ const About = () => {
     <div className={classes.AboutMe}>
       <PageHeader title={"About Me"} />
       <div className={classes.Container}>
+        <div className={classes.Photo}>
+          <img className={classes.Me} src={ProfileImg} alt="ProfileImage"></img>
+        </div>
         <div className={classes.Text}>
           <h2>Hello! I'm Isurika</h2>
           <p>
@@ -18,9 +21,6 @@ const About = () => {
             learning and mastering new technologies. Possessing strong team
             working skills, but also able to work well individually.
           </p>
-        </div>
-        <div className={classes.Photo}>
-          <img className={classes.Me} src={ProfileImg} alt="ProfileImage"></img>
         </div>
       </div>
     </div>
