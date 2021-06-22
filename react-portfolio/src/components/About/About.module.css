@@ -3,15 +3,14 @@
   padding-bottom: 5%;
 }
 .AboutMe .Container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .AboutMe .Container .Text {
-  width: 65%;
-
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  width: 65%;
 }
 
 .AboutMe .Container .Text p {
@@ -22,9 +21,6 @@
 }*/
 
 .AboutMe .Container .Photo .Me {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: 200px;
   border-radius: 50%;
   border: solid 4px white;
