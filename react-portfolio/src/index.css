@@ -7,8 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 h1 {
-  font-weight: 900;
-  font-size: 45px;
+  font-weight: 650;
+  font-size: 35px;
+  text-align: center;
 }
 
 h2 {
