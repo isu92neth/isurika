@@ -16,18 +16,32 @@
   font-size: 20px;
 }
 
+.Projects .ProjectContainer .ProjectTitle {
+  margin-bottom: 20px;
+}
+
 .Projects .ProjectContainer .Thumbnail img {
-  max-width: 350px;
+  max-width: 250px;
 }
 
 .Projects .ProjectContainer .Text {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.Projects .ProjectContainer .Text p {
+  font-size: 16px;
+}
+
+.Projects .ProjectContainer .Technologies p {
+  font-size: 16px;
 }
 
 .Projects .ProjectContainer .Thumbnail {
   padding-left: 2.5%;
   padding-right: 2.5%;
+  display: flex;
+  align-items: center;
 }
 
 .Projects .ProjectName .ProjectContainer {
