@@ -13,20 +13,30 @@
   width: 65%;
 }
 
-.AboutMe .Container .Text p {
-  font-size: 18px;
-}
-/*
 .AboutMe .Container .Photo {
-}*/
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .AboutMe .Container .Photo .Me {
-  height: 200px;
+  width: 50%;
   border-radius: 50%;
   border: solid 4px white;
+  max-width: 500px;
 }
 
 .AboutMe .Container .Text h2 {
   font-weight: 700;
-  font-size: 25px;
+}
+
+@media (max-width: 706px) {
+  .AboutMe .Container .Text {
+    width: 80%;
+  }
+
+  .AboutMe .Container .Photo {
+    width: 80%;
+  }
 }

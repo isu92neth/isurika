@@ -9,9 +9,9 @@
 .Container hr {
   position: absolute;
 
-  width: 120px;
+  width: 12vw;
   border: 1 px solid #1d9ac5;
-  top: 50%;
+  top: 55%;
 }
 
 .Container h1 {

@@ -9,31 +9,36 @@ body {
 
 html {
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 h1 {
   font-weight: 650;
-  font-size: 35px;
+  font-size: calc(1rem + 1.7vw);
   text-align: center;
   color: rgb(78, 74, 74);
 }
 
 h2 {
   font-weight: 700;
-  font-size: 23px;
+  font-size: calc(1rem + 1.2vw);
   color: rgb(78, 74, 74);
 }
 
 p {
   font-weight: 500;
-  font-size: 21px;
+  font-size: calc(1rem + 0.3vw);
   color: rgb(78, 74, 74);
 }
 
 a {
   font-weight: 900;
-  font-size: 16px;
+  font-size: calc(1rem + 0.3vw);
   color: rgb(78, 74, 74);
+}
+
+li {
+  font-size: calc(1rem + 0.3vw);
 }
 
 code {

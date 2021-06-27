@@ -3,16 +3,19 @@ import PageHeader from "./../PageHeader/PageHeader";
 import Chessboard from "./../../img/chessboard.png";
 import Cloud from "./../../img/cloud.png";
 import UIdesign from "./../../img/UIdesign.jpg";
+import Welcome from "./../../img/mediaClub_1.png";
+import Members from "./../../img/mediaClub_2.png";
+import Equipment from "./../../img/mediaClub_3.png";
+import TimingDiag1 from "./../../img/Timing_Diagram1.png";
+import TimingDiag2 from "./../../img/Timing_Diagram2.png";
+import TimingDiag3 from "./../../img/Timing_Diagram3.png";
+import { motion } from "framer-motion";
 
-const projectContent = (
-  title,
-  url,
-  thumbnail1,
-  thumbnail2,
-  thumbnail3,
-  description,
-  technologies
-) => {
+const chessMATEimgs = [UIdesign, Chessboard, Cloud];
+const mediaClubimgs = [Welcome, Members];
+const CPUimgs = [TimingDiag1];
+
+const projectContent = (title, url, imgList, description, technologies) => {
   return (
     <div className={classes.ProjectContainer}>
       <div className={classes.ProjectTitle}>
@@ -20,9 +23,13 @@ const projectContent = (
         <hr />
       </div>
       <div className={classes.Thumbnail}>
-        <img src={thumbnail1} alt="thumbnail"></img>
-        <img src={thumbnail2} alt="thumbnail"></img>
-        <img src={thumbnail3} alt="thumbnail"></img>
+        {imgList.map((images) => (
+          <motion.img
+            whileHover={{ scale: 1.2 }}
+            src={images}
+            alt="Image"
+          ></motion.img>
+        ))}
       </div>
       <div className={classes.Text}>
         <p>{description}</p>
@@ -59,27 +66,21 @@ const Projects = () => {
           {projectContent(
             "chessMATE",
             "https://cepdnaclk.github.io/e16-3yp-chessMATE/",
-            UIdesign,
-            Chessboard,
-            Cloud,
+            chessMATEimgs,
             chessMATEdescription,
             chessMATETech
           )}
           {projectContent(
             "Media Club Equipment Lending System",
             "https://cepdnaclk.github.io/e16-3yp-chessMATE/",
-            UIdesign,
-            Chessboard,
-            Cloud,
+            mediaClubimgs,
             mediaClubDescription,
             mediaClubTech
           )}
           {projectContent(
             "CPU",
             "https://cepdnaclk.github.io/e16-3yp-chessMATE/",
-            UIdesign,
-            Chessboard,
-            Cloud,
+            CPUimgs,
             CPUdescription,
             CPUtech
           )}

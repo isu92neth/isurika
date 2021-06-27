@@ -20,7 +20,7 @@
 .Skills .Container .List {
   flex-basis: 33%;
   background-color: white;
-  box-shadow: 0 0 12px 12px rgb(185, 186, 187);
+  box-shadow: 0 0 1vw 0.3vw rgb(185, 186, 187);
   border-radius: 0;
   margin-bottom: 30px;
   margin-left: 3%;
@@ -30,4 +30,10 @@
 .Skills .List ul li {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 706px) {
+  .Skills .Container {
+    flex-direction: column;
+  }
 }

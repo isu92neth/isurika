@@ -1,5 +1,6 @@
 import classes from "./Skills.module.css";
 import PageHeader from "./../PageHeader/PageHeader";
+import { motion } from "framer-motion";
 
 const listTitlesStyle = {
   fontWeight: 600,
@@ -89,7 +90,11 @@ const Skills = () => {
       <PageHeader title={"Skills"} />
       <div className={classes.Container}>
         {totalSkills.map((skills) => {
-          return <div className={classes.List}>{skills}</div>;
+          return (
+            <motion.div whileHover={{ scale: 1.1 }} className={classes.List}>
+              {skills}
+            </motion.div>
+          );
         })}
       </div>
     </div>
