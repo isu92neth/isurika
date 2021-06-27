@@ -14,14 +14,20 @@ html {
 
 h1 {
   font-weight: 650;
-  font-size: calc(1rem + 1.7vw);
+  font-size: calc(0.7rem + 1.5vw);
   text-align: center;
   color: rgb(78, 74, 74);
 }
 
 h2 {
   font-weight: 700;
-  font-size: calc(1rem + 1.2vw);
+  font-size: calc(0.7rem + 1.2vw);
+  color: rgb(78, 74, 74);
+}
+
+h4 {
+  font-weight: 650;
+  font-size: calc(0.7rem + 0.8vw);
   color: rgb(78, 74, 74);
 }
 

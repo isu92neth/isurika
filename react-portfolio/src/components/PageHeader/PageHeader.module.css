@@ -9,11 +9,13 @@
 .Container hr {
   position: absolute;
 
-  width: 12vw;
-  border: 1 px solid #1d9ac5;
+  width: 15vw;
+  background: #1d9ac5;
+  height: 2%;
   top: 55%;
+  border: 1px solid #1d9ac5;
 }
 
 .Container h1 {
-  color: rgb(124, 116, 116);
+  color: #252e31;
 }

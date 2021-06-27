@@ -13,18 +13,21 @@
   width: 70%;
 }
 
-.Projects .Paragraph {
-}
-
 .Projects .ProjectContainer .ProjectTitle {
   margin-bottom: 20px;
   width: 55%;
 }
 
+.Projects .ProjectContainer .ProjectTitle h2 {
+  color: #515557;
+}
+
 .Projects .ProjectContainer .ProjectTitle hr {
-  width: 12vw;
-  border: 1 px solid #1d9ac5;
-  top: 50%;
+  border: 1px solid #515557;
+  width: 15vw;
+  background: #515557;
+  height: 2%;
+  top: 55%;
 }
 
 .Projects .ProjectContainer .Thumbnail img {
@@ -40,10 +43,12 @@
   width: 65%;
 }
 
-.Projects .ProjectContainer .Text p {
+.Projects .ProjectContainer .Technologies h4 {
+  margin-bottom: 0;
 }
 
 .Projects .ProjectContainer .Technologies p {
+  margin-top: 0;
 }
 
 .Projects .ProjectContainer .Thumbnail {
@@ -77,6 +82,10 @@
   }
 
   .Projects .ProjectContainer .Text {
+    width: 80%;
+  }
+
+  .Projects .ProjectContainer .Technologies {
     width: 80%;
   }
 }

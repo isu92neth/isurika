@@ -12,14 +12,6 @@ const Contact = () => {
       <h1></h1>
       <div className={classes.ContactIcons}>
         <motion.div whileHover={{ scale: 1.3 }}>
-          <FaMailBulk
-            color="white"
-            size="30px"
-            style={{ padding: "1%" }}
-            onClick={handleURL("123csissa@gmail.com")}
-          />
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.3 }}>
           <FaGithub
             color="white"
             size="30px"

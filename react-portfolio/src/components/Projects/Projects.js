@@ -35,7 +35,8 @@ const projectContent = (title, url, imgList, description, technologies) => {
         <p>{description}</p>
       </div>
       <div className={classes.Technologies}>
-        <p>Technologies Used: {technologies}</p>
+        <h4>Technologies Used</h4>
+        <p>{technologies}</p>
       </div>
     </div>
   );
