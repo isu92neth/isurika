@@ -5,15 +5,17 @@ import Cloud from "./../../img/cloud.png";
 import UIdesign from "./../../img/UIdesign.jpg";
 import Welcome from "./../../img/mediaClub_1.png";
 import Members from "./../../img/mediaClub_2.png";
-import Equipment from "./../../img/mediaClub_3.png";
 import TimingDiag1 from "./../../img/Timing_Diagram1.png";
-import TimingDiag2 from "./../../img/Timing_Diagram2.png";
-import TimingDiag3 from "./../../img/Timing_Diagram3.png";
+import Mandelbrot from "./../../img/Mandelbrot.png";
+import Julia from "./../../img/Julia.png";
 import { motion } from "framer-motion";
 
 const chessMATEimgs = [UIdesign, Chessboard, Cloud];
 const mediaClubimgs = [Welcome, Members];
 const CPUimgs = [TimingDiag1];
+const Auctionimgs = [];
+const Fractalsimgs = [Mandelbrot, Julia];
+const computerimgs = [];
 
 const projectContent = (title, url, imgList, description, technologies) => {
   return (
@@ -38,6 +40,9 @@ const projectContent = (title, url, imgList, description, technologies) => {
         <h4>Technologies Used</h4>
         <p>{technologies}</p>
       </div>
+      <div className={classes.URL}>
+        <a href={url}>Visit Github Repo</a>
+      </div>
     </div>
   );
 };
@@ -51,9 +56,20 @@ web application shows the information of equipment including member details and 
 const CPUdescription = `A simple 8-bit single-cycle processor which includes an ALU, a register file and control logic. Later a memory 
 sub-system was added.`;
 
+const AuctionDescription = `Implemented a server which can be used by clients to bid for items in a stock exchange. Concepts such as Threads, Synchronization primitives, Sockets, 
+Objects, Classes, and Collections were used.`;
+
+const FractalsDescription = `Designed and implemented a software that would plot two of the most popular fractals: Mandelbrot set and Julia set.`;
+
+const ComputerDescription = `Designed and built a simple 8-bit computer system which included components: ALU, instruction loading unit and display 
+output unit.`;
+
 const chessMATETech = ` Flutter, Nodejs, MySQL, AWS`;
 const mediaClubTech = ` MySQL, PHP, HTML/CSS, JavaScript, Bootstrap`;
 const CPUtech = `Verlog`;
+const fractalsTech = `Java`;
+const auctionTech = `Java`;
+const computerTech = `Embedded Systems, Integrated circuits`;
 
 const Projects = () => {
   return (
@@ -73,17 +89,38 @@ const Projects = () => {
           )}
           {projectContent(
             "Media Club Equipment Lending System",
-            "https://cepdnaclk.github.io/e16-3yp-chessMATE/",
+            "https://github.com/isu92neth/Media-Club-Equipment-Lending-System",
             mediaClubimgs,
             mediaClubDescription,
             mediaClubTech
           )}
           {projectContent(
             "CPU",
-            "https://cepdnaclk.github.io/e16-3yp-chessMATE/",
+            "https://github.com/isu92neth/Building-a-Memory-Hierarchy",
             CPUimgs,
             CPUdescription,
             CPUtech
+          )}
+          {projectContent(
+            "Auction Server",
+            "https://github.com/isu92neth/Auction-Server",
+            Auctionimgs,
+            AuctionDescription,
+            auctionTech
+          )}
+          {projectContent(
+            "Fractals",
+            "https://github.com/isu92neth/Fractals",
+            Fractalsimgs,
+            FractalsDescription,
+            fractalsTech
+          )}
+          {projectContent(
+            "8-bit Computer",
+            "",
+            computerimgs,
+            ComputerDescription,
+            computerTech
           )}
         </div>
       </div>

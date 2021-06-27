@@ -32,6 +32,24 @@
   color: black;
 }
 
+.AboutMe .Container .PDF {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.AboutMe .Container .PDF svg path {
+  cursor: pointer;
+}
+
+.AboutMe .Container .PDF div {
+  padding: 10px;
+}
+
+.AboutMe .Container .PDF p {
+  color: #246a81;
+}
+
 @media (max-width: 706px) {
   .AboutMe .Container .Text {
     width: 80%;

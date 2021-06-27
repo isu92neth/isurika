@@ -59,6 +59,15 @@
   width: 85%;
 }
 
+.Projects .ProjectContainer .URL {
+  padding-bottom: 5%;
+}
+
+.Projects .ProjectContainer .URL a {
+  color: #246a81;
+  font-size: 100%;
+}
+
 .Projects .ProjectName .ProjectContainer {
   display: flex;
   flex-direction: column;
@@ -87,5 +96,9 @@
 
   .Projects .ProjectContainer .Technologies {
     width: 80%;
+  }
+
+  .Projects .ProjectContainer .URL {
+    width: 70%;
   }
 }
