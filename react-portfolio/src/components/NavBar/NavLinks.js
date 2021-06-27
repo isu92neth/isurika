@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const NavLinks = (props) => {
   const animateFrom = { opacity: 0, y: -40 };
@@ -11,7 +12,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.05 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -19,7 +20,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.1 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#about">About Me</a>
+        <Link to="/about">About Me</Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -27,7 +28,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.15 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#skills">Skills</a>
+        <Link to="/skills">Skills</Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -35,7 +36,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.2 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#projects">Projects</a>
+        <Link to="/projects">Projects</Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -43,7 +44,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.25 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#contact">Contact</a>
+        <Link to="/contact">Contact</Link>
       </motion.li>
     </ul>
   );
