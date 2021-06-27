@@ -26,10 +26,29 @@ const MobileNavigation = () => {
 
   const closeMobileMenu = () => setOpen(false);
   return (
-    <nav className={classes.MobileNavigation}>
-      {open ? closeIcon : hamburgerIcon}
-      {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
-    </nav>
+    <div>
+      <nav className={classes.MobileNavigation}>
+        {open ? closeIcon : hamburgerIcon}
+        {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+      </nav>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/skills">
+          <Skills />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
+    </div>
   );
 };
 

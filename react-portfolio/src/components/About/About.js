@@ -5,7 +5,11 @@ import { GrDocumentPdf } from "react-icons/gr";
 import { motion } from "framer-motion";
 
 const openPDF = () => {
-  return () => window.open("./../../CV/CV_E16012", "_blank");
+  return () =>
+    window.open(
+      "https://github.com/isu92neth/isurika/blob/main/react-portfolio/src/CV/CV_E16012.pdf",
+      "_blank"
+    );
 };
 
 const About = () => {
@@ -20,12 +24,10 @@ const About = () => {
           <h2>Hello! I'm Isurika</h2>
           <p>
             A motivated, hardworking Computer Engineer, with the strong
-            foundation in Software Engineering and programming principles,
-            seeking for an internship or research and development opportunity
-            that will allow to utilize problem solving skills and to further
-            improve my skills in the field of Computer Engineering. Keen in
-            learning and mastering new technologies. Possessing strong team
-            working skills, but also able to work well individually.
+            foundation in Software Engineering and programming principles.
+            Interested in Mobile and Web application development. Keen in
+            learning and mastering new technologies. If interested you can go
+            through my projects shown below.
           </p>
         </div>
         <div className={classes.PDF}>
@@ -37,7 +39,6 @@ const About = () => {
             />
           </motion.div>
           <p>View my Curriculum Vitae</p>
-          <a href="./../../CV/CV_E16012">view</a>
         </div>
       </div>
     </div>
