@@ -4,7 +4,7 @@ import WaveLine from "./WaveLine";
 
 const Home = () => {
   return (
-    <div className={classes.Home}>
+    <div className={classes.Home} id="Home">
       <WaveLine />
       <div className={classes.Container}>
         <h1 className={classes.Name}>Isurika Adikari</h1>
