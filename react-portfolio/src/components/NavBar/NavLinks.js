@@ -19,15 +19,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.05 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link
-          to="/"
-          onClick={() => {
-            let Home = document.getElementById("Home");
-            Home && Home.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Home
-        </Link>
+        <a href="/">Home</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -35,16 +27,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.1 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link
-          to="/about"
-          onClick={() => {
-            let about = document.getElementById("about");
-            about &&
-              about.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          About Me
-        </Link>
+        <a href="/#about">About</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -52,16 +35,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.15 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link
-          to="/skills"
-          onClick={() => {
-            let skills = document.getElementById("skills");
-            skills &&
-              skills.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Skills
-        </Link>
+        <a href="/#skills">Skills</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -69,16 +43,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.2 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link
-          to="/projects"
-          onClick={() => {
-            let projects = document.getElementById("projects");
-            projects &&
-              projects.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Projects
-        </Link>
+        <a href="/#projects">Projects</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -86,16 +51,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.25 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link
-          to="/contact"
-          onClick={() => {
-            let contact = document.getElementById("contact");
-            contact &&
-              contact.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-        >
-          Contact
-        </Link>
+        <a href="/#contact">Contact</a>
       </motion.li>
     </ul>
   );
