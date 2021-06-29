@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
 import { useEffect } from "react";
 
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -73;
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+};
+
 const NavLinks = (props) => {
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
@@ -15,7 +21,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.05 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/#">
+        <Link smooth to="/isurika#" scroll={(el) => scrollWithOffset(el)}>
           Home
         </Link>
       </motion.li>
@@ -25,7 +31,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.1 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/#about">
+        <Link smooth to="/isurika#about" scroll={(el) => scrollWithOffset(el)}>
           About Me
         </Link>
       </motion.li>
@@ -35,7 +41,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.15 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/#skills">
+        <Link smooth to="/isurika#skills" scroll={(el) => scrollWithOffset(el)}>
           Skills
         </Link>
       </motion.li>
@@ -45,7 +51,11 @@ const NavLinks = (props) => {
         transition={{ delay: 0.2 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to={"/#projects"}>
+        <Link
+          smooth
+          to={"/isurika#projects"}
+          scroll={(el) => scrollWithOffset(el)}
+        >
           Projects
         </Link>
       </motion.li>
@@ -55,7 +65,11 @@ const NavLinks = (props) => {
         transition={{ delay: 0.25 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/#contact">
+        <Link
+          smooth
+          to="/isurika#contact"
+          scroll={(el) => scrollWithOffset(el)}
+        >
           Contact
         </Link>
       </motion.li>
