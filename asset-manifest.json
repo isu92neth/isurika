@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/isurika/static/css/main.8a578723.chunk.css",
-    "main.js": "/isurika/static/js/main.439fefa8.chunk.js",
-    "main.js.map": "/isurika/static/js/main.439fefa8.chunk.js.map",
+    "main.js": "/isurika/static/js/main.fa921e09.chunk.js",
+    "main.js.map": "/isurika/static/js/main.fa921e09.chunk.js.map",
     "runtime-main.js": "/isurika/static/js/runtime-main.f9ae0648.js",
     "runtime-main.js.map": "/isurika/static/js/runtime-main.f9ae0648.js.map",
     "static/js/2.ca757ed7.chunk.js": "/isurika/static/js/2.ca757ed7.chunk.js",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.f9ae0648.js",
     "static/js/2.ca757ed7.chunk.js",
     "static/css/main.8a578723.chunk.css",
-    "static/js/main.439fefa8.chunk.js"
+    "static/js/main.fa921e09.chunk.js"
   ]
 }
