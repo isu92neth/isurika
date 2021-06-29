@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/isurika/static/css/main.8a578723.chunk.css",
-    "main.js": "/isurika/static/js/main.3f6d5d50.chunk.js",
-    "main.js.map": "/isurika/static/js/main.3f6d5d50.chunk.js.map",
+    "main.css": "/isurika/static/css/main.ec5fb8ed.chunk.css",
+    "main.js": "/isurika/static/js/main.439fefa8.chunk.js",
+    "main.js.map": "/isurika/static/js/main.439fefa8.chunk.js.map",
     "runtime-main.js": "/isurika/static/js/runtime-main.f9ae0648.js",
     "runtime-main.js.map": "/isurika/static/js/runtime-main.f9ae0648.js.map",
     "static/js/2.ca757ed7.chunk.js": "/isurika/static/js/2.ca757ed7.chunk.js",
     "static/js/2.ca757ed7.chunk.js.map": "/isurika/static/js/2.ca757ed7.chunk.js.map",
     "index.html": "/isurika/index.html",
-    "static/css/main.8a578723.chunk.css.map": "/isurika/static/css/main.8a578723.chunk.css.map",
+    "static/css/main.ec5fb8ed.chunk.css.map": "/isurika/static/css/main.ec5fb8ed.chunk.css.map",
     "static/js/2.ca757ed7.chunk.js.LICENSE.txt": "/isurika/static/js/2.ca757ed7.chunk.js.LICENSE.txt",
     "static/media/Julia.c8c8c909.png": "/isurika/static/media/Julia.c8c8c909.png",
     "static/media/Mandelbrot.a0473e51.png": "/isurika/static/media/Mandelbrot.a0473e51.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.f9ae0648.js",
     "static/js/2.ca757ed7.chunk.js",
-    "static/css/main.8a578723.chunk.css",
-    "static/js/main.3f6d5d50.chunk.js"
+    "static/css/main.ec5fb8ed.chunk.css",
+    "static/js/main.439fefa8.chunk.js"
   ]
 }
