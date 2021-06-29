@@ -15,7 +15,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.05 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/isurika#">
+        <Link smooth to="/#">
           Home
         </Link>
       </motion.li>
@@ -25,7 +25,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.1 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/isurika#about">
+        <Link smooth to="/#about">
           About Me
         </Link>
       </motion.li>
@@ -35,7 +35,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.15 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/isurika#skills">
+        <Link smooth to="/#skills">
           Skills
         </Link>
       </motion.li>
@@ -45,7 +45,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.2 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to={"/isurika#projects"}>
+        <Link smooth to={"/#projects"}>
           Projects
         </Link>
       </motion.li>
@@ -55,7 +55,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.25 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link smooth to="/isurika#contact">
+        <Link smooth to="/#contact">
           Contact
         </Link>
       </motion.li>
