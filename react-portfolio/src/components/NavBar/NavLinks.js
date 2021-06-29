@@ -1,16 +1,12 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { useEffect } from "react";
 
 const NavLinks = (props) => {
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
-  useEffect(() => {
-    let url = window.location.href.split("/");
-    let target = url[url.length - 1].toLowerCase();
-    let element = document.getElementById(target);
-    element && element.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, []);
+
   return (
     <ul>
       <motion.li
@@ -19,7 +15,9 @@ const NavLinks = (props) => {
         transition={{ delay: 0.05 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/">Home</a>
+        <Link smooth to="/isurika#">
+          Home
+        </Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -27,7 +25,9 @@ const NavLinks = (props) => {
         transition={{ delay: 0.1 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#about">About</a>
+        <Link smooth to="/isurika#about">
+          About Me
+        </Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -35,7 +35,9 @@ const NavLinks = (props) => {
         transition={{ delay: 0.15 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#skills">Skills</a>
+        <Link smooth to="/isurika#skills">
+          Skills
+        </Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -43,7 +45,9 @@ const NavLinks = (props) => {
         transition={{ delay: 0.2 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#projects">Projects</a>
+        <Link smooth to={"/isurika#projects"}>
+          Projects
+        </Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -51,7 +55,9 @@ const NavLinks = (props) => {
         transition={{ delay: 0.25 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/#contact">Contact</a>
+        <Link smooth to="/isurika#contact">
+          Contact
+        </Link>
       </motion.li>
     </ul>
   );

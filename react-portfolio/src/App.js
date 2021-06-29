@@ -5,12 +5,13 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import { Switch, Route } from "react-router-dom";
+import React from "react";
+import Container from "./components/NavBar/pages";
 
 const App = () => {
   return (
     <div className="App">
       <NavBar />
-
       <Home />
 
       <About />
